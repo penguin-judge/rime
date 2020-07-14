@@ -93,21 +93,24 @@ class Project(targets.registry.Project):
             content = '''\
 # -*- coding: utf-8; mode: python -*-
 
-pid='X'
-
 problem(
-  time_limit=1.0,
-  id=pid,
-  title=pid + ": Your Problem Name",
+  time_limit=5,
+  id="***",
+  title="Your Problem Name",
+  #reference_solution='???',
   #wiki_name="Your pukiwiki page name", # for wikify plugin
   #assignees=['Assignees', 'for', 'this', 'problem'], # for wikify plugin
   #need_custom_judge=True, # for wikify plugin
-  #reference_solution='???',
-  )
-
-atcoder_config(
-  task_id=None # None means a spare
 )
+
+penguin_config(
+  memory_limit=512,
+  score=100,
+)
+
+#atcoder_config(
+#  task_id=None # None means a spare
+#)
 '''
             newdir = os.path.join(self.base_dir, name)
             if(os.path.exists(newdir)):
