@@ -211,6 +211,7 @@ class Problem(targets.registry.Problem):
 #java_generator(src='Generator.java', encoding='UTF-8', mainclass='Generator')
 #rust_generator(src='generator.rs')
 #script_generator(src='generator.pl')
+#script_generator(src='generator.py')
 
 ## Input validators.
 #c_validator(src='validator.c')
@@ -219,6 +220,7 @@ class Problem(targets.registry.Problem):
 #               mainclass='tmp/validator/Validator')
 #rust_validator(src='validator.rs')
 #script_validator(src='validator.pl')
+#script_validator(src='validator.py')
 
 ## Output judges.
 #c_judge(src='judge.c')
